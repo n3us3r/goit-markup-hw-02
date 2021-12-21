@@ -1,17 +1,144 @@
 :root {
-    --
-
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --white-color: #FFFFFF;
+    --action-color: #2196F3;
+    --signature-color: rgba(255, 255, 255, 0.6);
+    --main-bg: #FFFFFF;
+    --other-bg: #2F303A;
+    --button-bg: #F5F4FA
 }
+
 body {
-    /* font-family: 'Raleway', sans-serif; */
-    color: #757575;
+    color: var(--main-text-color);
     font-family: 'Roboto', sans-serif;
 }
+.no-dots {
+    list-style-type: none;
+}
 
-/* Main color #212121 */
-/* hover color 2196F3 */
-/* Text color 757575 */
-/* Big text FFFFFF */
-/* Signature color background: rgba(255, 255, 255, 0.6); */
+/* Шапка */
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--action-color);
+}
+
+.nav-list .item {
+    color: var(--main-text-color);
+}
+
+.nav-list .item:hover,
+.nav-list .item:focus {
+    color: var(--action-color);
+}
+
+.nav-list .item.current {
+    color: var(--action-color);
+}
 
 
+.contacts {
+    color: var(--secondary-text-color);
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: var(--action-color);
+}
+
+
+
+
+/* Первая секция */
+
+.general-info {
+    color: var(--white-color);
+    font-size: 44px;
+    background-color: var(--other-bg);
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button.main {
+    background-color: var(--action-color);
+    color: var(--white-color);
+    font-size: 16px;
+}
+
+.button.choice {
+    background-color: var(--button-bg);
+}
+.button.choice:hover,
+.button.choice:focus {
+    background-color: var(--action-color);
+    color:var(--white-color);
+}
+
+
+
+/* Вторая секция */
+
+.benefits .title{
+    font-size: 14px;
+}
+
+.benefits .about {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+}
+
+
+
+/* Третья секция */
+
+.secondary-text {
+    font-size: 36px;
+}
+
+
+/* Четвертая секция */
+
+.team .person {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.team .position {
+    color: var(--secondary-text-color);
+    font-weight: 400
+}
+
+
+/* Подвал */
+
+.cellar {
+    background-color: var(--other-bg);
+}
+
+.cellar .location {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight:400;
+}
+
+.cellar .links {
+    color: var(--signature-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.portfolio .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.portfolio .about {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
