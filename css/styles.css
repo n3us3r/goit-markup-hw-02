@@ -5,14 +5,18 @@
     --action-color: #2196F3;
     --signature-color: rgba(255, 255, 255, 0.6);
     --main-bg: #FFFFFF;
-    --other-bg: #2F303A;
-    --button-bg: #F5F4FA
+    --footer-bg: #2F303A;
+    --additional-bg: #F5F4FA
 }
 
 body {
     color: var(--main-text-color);
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg);
+
+    font-family: 'Roboto', sans-serif;  
+    letter-spacing: 0.03em;
 }
+
 .no-dots {
     list-style-type: none;
 }
@@ -24,6 +28,9 @@ body {
     font-weight: 700;
     font-size: 26px;
     color: var(--action-color);
+
+    font-size: 26px;
+    line-height: 1.2;
 }
 
 .nav-list .item {
@@ -44,6 +51,15 @@ body {
     color: var(--secondary-text-color);
 }
 
+.nav-list .item,
+.contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+
 .contacts:hover,
 .contacts:focus {
     color: var(--action-color);
@@ -56,27 +72,32 @@ body {
 
 .general-info {
     color: var(--white-color);
+    background-color: var(--footer-bg);
+
+    font-weight: 900;
     font-size: 44px;
-    background-color: var(--other-bg);
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .button {
     cursor: pointer;
+    font-family: inherit;
 }
 
 .button.main {
     background-color: var(--action-color);
     color: var(--white-color);
-    font-size: 16px;
-}
 
-.button.choice {
-    background-color: var(--button-bg);
-}
-.button.choice:hover,
-.button.choice:focus {
-    background-color: var(--action-color);
-    color:var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    letter-spacing: 0.06em;
 }
 
 
@@ -84,12 +105,17 @@ body {
 /* Вторая секция */
 
 .benefits .title{
+    font-weight: 700;
     font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase; 
 }
 
 .benefits .about {
     color: var(--secondary-text-color);
+
     font-size: 14px;
+    line-height: 1.7;
 }
 
 
@@ -97,48 +123,80 @@ body {
 /* Третья секция */
 
 .secondary-text {
+    font-weight: 700;
     font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 
 /* Четвертая секция */
 
+.team {
+    background-color: var(--additional-bg);
+}
+
 .team .person {
-    font-size: 16px;
     font-weight: 500;
 }
 
-.team .position {
+.team .about {
     color: var(--secondary-text-color);
-    font-weight: 400
+}
+
+.team .person,
+.team .about {
+    font-size: 16px;
+    line-height: 1.18;
 }
 
 
-/* Подвал */
+/* Подвал на страницах */
 
 .cellar {
-    background-color: var(--other-bg);
+    background-color: var(--footer-bg);
 }
 
 .cellar .location {
     color: var(--white-color);
-    font-size: 14px;
-    font-weight:400;
 }
 
 .cellar .links {
     color: var(--signature-color);
+}
+
+.cellar .location,
+.cellar .links {
     font-size: 14px;
-    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* Portfolio */
+
+.button.choice {
+    background-color: var(--additional-bg);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.button.choice:hover,
+.button.choice:focus {
+    background-color: var(--action-color);
+    color:var(--white-color);
 }
 
 .portfolio .title {
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .portfolio .about {
     color: var(--secondary-text-color);
+
     font-size: 16px;
-    font-weight: 400;
+    line-height: 1.87;
+
 }
