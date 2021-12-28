@@ -26,10 +26,22 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    color: var(--action-color);
+    color: var(--main-text-color);
 
     font-size: 26px;
     line-height: 1.2;
+}
+
+.logo-style {
+    color: var(--action-color);
+}
+
+.navigation > .logo {
+    color: var(--main-text-color);
+}
+
+.footer > .logo {
+    color: var(--main-white-color);
 }
 
 .navigation-link {
@@ -42,7 +54,9 @@ body {
 .header-contacts-link:hover,
 .header-contacts-link:focus,
 .footer-links:hover,
-.footer-links:focus {
+.footer-links:focus,
+.footer-address-links:hover,
+.footer-address-links:focus {
     color: var(--action-color);
 }
 
